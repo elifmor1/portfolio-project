@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff007f, #ffcc00, #00bfff);
+    background-size: 300% 300%;
+    animation: gradientBG 10s infinite alternate;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.hero {
+    padding: 60px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.top-navigation {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+.top-navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.top-navigation a:hover {
+    color: yellow;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.project {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    background: #ffcc00;
+    color: black;
+}
